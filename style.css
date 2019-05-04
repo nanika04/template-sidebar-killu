@@ -1,0 +1,199 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.profil {
+    background-color: rgb(80, 95, 101);
+    height: 700px;
+    width: 25%;
+    float: left;
+    /*display: none;*/
+}
+
+.sub-profil {
+    padding: 3px 10px;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(17, 152, 131);
+    color: white;
+    font-weight: bold;
+}
+
+.isi-sub-profil {
+    margin-left: 5px;
+}
+
+.isi-sub-profil img {
+    height: 100px;
+    width: 100px;
+}
+
+.sub-profil2 {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin: 0px 0px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    /*display: block;*/
+}
+
+.sub-profil2:hover {
+    background-color: rgb(26, 170, 148);
+    transition: background-color 0.8s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.isi {
+    color: white;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.isi:target {
+    background-color: rgb(153, 152, 149);
+    padding: 10px 10px;
+    height: 150px;
+    line-height: 25px;
+    transition: height 2s;
+    -webkit-transition: height 2s;
+    -moz-transition: height 2s;
+}
+
+.isi #sub-isi {
+    text-align: right;
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 30px;
+}
+
+.isi #sub-isi:hover {
+    background-color: rgb(26, 170, 148);
+    transition: background-color 0.8s;
+}
+
+
+/*====== FLACE ============ */
+
+.flace {
+    float: left;
+    position: relative;
+    background-color: white;
+    height: 700px;
+    width: 75%;
+}
+
+.header {
+    color: rgba(110, 113, 115, 0.6);
+    font-weight: bold;
+    margin: 2px 0px;
+    background-color: white;
+    width: 98%;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 1px 1px rgb(185, 182, 182);
+}
+
+.sub-header {
+    background-color: rgb(26, 170, 148);
+    width: 40%;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 30px;
+    border-radius: 20px 20px;
+    transition: width 1s;
+}
+
+.sub-header:hover {
+    width: 65%;
+    background-color: rgba(26, 170, 148, 0.81);
+}
+
+
+/*======== menu menu =========*/
+
+.history {
+    margin: 30px 2.5% 0px 2.5%;
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgb(26, 170, 148);
+    text-align: left;
+    padding: 0px 10px;
+    font-size: 1.5em;
+    color: white;
+    box-shadow: 0px 4px 3px 0px rgb(131, 129, 130);
+}
+
+.history:hover {
+    background-color: rgba(26, 170, 148, 0.82);
+}
+
+.isi-history {
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.isi-history:target {
+    width: 70%;
+    box-shadow: 0px 0px 1px 1px rgb(175, 175, 175);
+    padding: 10px 10px;
+    height: 250px;
+    line-height: 25px;
+    transition: height 2s;
+    -webkit-transition: height 2s;
+    -moz-transition: height 2s;
+    text-align: justify;
+}
+
+#hide {
+    font-size: 1.5em;
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .profil {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 50%;
+    }
+    #menu {
+        float: right;
+    }
+    .sub-profil {
+        width: 90%;
+    }
+    .flace {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+    }
+    #hide {
+        display: block;
+    }
+}
